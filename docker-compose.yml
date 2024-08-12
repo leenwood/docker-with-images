@@ -1,0 +1,7 @@
+services:
+  nginx:
+    build: .
+    ports:
+      - "17771:80"
+    container_name: images-container
+    restart: unless-stopped
